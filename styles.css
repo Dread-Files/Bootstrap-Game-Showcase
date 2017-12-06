@@ -1,0 +1,11 @@
+img {
+  width: 100%;
+}
+/*.zelda {
+  position: relative;
+}
+.clip-zelda {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+   clip: shape(top, right, bottom, left);
+}*/
