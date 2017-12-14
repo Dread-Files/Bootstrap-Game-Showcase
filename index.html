@@ -9,11 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand active" href="index.html">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand" href="index.html">
+        <img src="" class="d-inline-block align-top" alt="">
         Games List of 2017
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +28,9 @@
               Multiplayer Games
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="titanfall.html">Titanfall 2</a>
+              <a class="dropdown-item" href="gmod.html">Gerry's Mod</a>
               <a class="dropdown-item" href="siege.html">Rainbow 6 Siege</a>
-              <a class="dropdown-item" href="gerry.html">Gerry's Mod</a>
+              <a class="dropdown-item" href="titanfall.html">Titanfall 2</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -37,16 +38,12 @@
               Singleplayer Games
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="skyrim.html">The Elder Scrolls V: Skyrim</a>
-              <a class="dropdown-item" href="jak.html">PCSX2: Jak 3</a>
               <a class="dropdown-item" href="zelda.html">CEMU: Breath of the Wild</a>
+              <a class="dropdown-item" href="jak.html">PCSX2: Jak 3</a>
+              <a class="dropdown-item" href="witchers.html">The Witchers 3: Wild Hunt</a>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
 
@@ -62,22 +59,22 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="First slide">
+            <img class="d-block w-100" src="images/zelda_img.jpg" alt="The Legend of Zelda: Breath of the wild">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="Second slide">
+            <img class="d-block w-100" src="images/jak_img.jpg" alt="Jak 3">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="Third slide">
+            <img class="d-block w-100" src="images/witchers_img.png" alt="The Witchers: Wild Hunt">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="Fourth slide">
+            <img class="d-block w-100" src="images/gmod_img.png" alt="Gerry's Mod">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="Fifth slide">
+            <img class="d-block w-100" src="images/rainbow_img.jpg" alt="Rainbow 6: siege">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/zelda_img.jpg" alt="Sixth slide">
+            <img class="d-block w-100" src="images/titanfall_img.png" alt="Titanfall 2">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -94,31 +91,33 @@
         <div class="container">
 
           <div class="row">
-            <div class="card zelda col-lg-4 col-md-4">
-              <img class="clip-zelda img-responsive" src="images/zelda_img.jpg" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card col-lg-4 col-md-4">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card col-lg-4 col-md-4">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+            <h2>Singleplayer Games</h2>
+            <div class="card col-lg-4 col-md-4"><a href="zelda.html">
+              <img class="img-responsive" src="images/zelda_img.jpg" alt="The Legend of Zelda: Breath of the wild">
+              <p class="card-text">CEMU: The Legend of Zelda: Breath of the wild</p>
+            </a></div>
+            <div class="card col-lg-4 col-md-4"><a href="jak.html">
+              <img class="img-responsive" src="images/jak_img.jpg" alt="Jak 3">
+              <p class="card-text">PCSX2: Jak 3</p>
+            </a></div>
+            <div class="card col-lg-4 col-md-4"><a href="witchers.html">
+              <img class="img-responsive" src="images/witchers_img.png" alt="The Witchers3: Wild Hunt">
+              <p class="card-text">The Witchers 3: Wild Hunt</p>
+            </a></div>
 
-            <div class="card col-lg-4 col-md-4">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card col-lg-4 col-md-4">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card col-lg-4 col-md-4">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+            <h2>Multiplayer Games</h2>
+            <div class="card col-lg-4 col-md-4"><a href="gmod.html">
+              <img class="img-responsive" src="images/gmod_img.png" alt="Gerry's Mod">
+              <p class="card-text">Gerry's Mod</p>
+            </a></div>
+            <div class="card col-lg-4 col-md-4"><a href="siege.html">
+              <img class="img-responsive" src="images/rainbow_img.jpg" alt="Rainbow 6: Siege">
+              <p class="card-text">Rainbow 6: Siege</p>
+            </a></div>
+            <div class="card col-lg-4 col-md-4"><a href="titanfall.html">
+              <img class="img-responsive" src="images/titanfall_img.png" alt="Titanfall 2">
+              <p class="card-text">Titanfall 2</p>
+            </a></div>
           </div>
 
         </div>

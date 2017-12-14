@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>CEMU: Breath of the Wild</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel-"stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand active" href="index.html">
-        <img src="animal_kingdom_icon.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand" href="index.html">
+        <img src="" class="d-inline-block align-top" alt="">
         Games List of 2017
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +28,9 @@
               Multiplayer Games
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="titanfall.html">Titanfall 2</a>
+              <a class="dropdown-item" href="gmod.html">Gerry's Mod</a>
               <a class="dropdown-item" href="siege.html">Rainbow 6 Siege</a>
-              <a class="dropdown-item" href="gerry.html">Gerry's Mod</a>
+              <a class="dropdown-item" href="titanfall.html">Titanfall 2</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -37,46 +38,41 @@
               Singleplayer Games
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="skyrim.html">The Elder Scrolls V: Skyrim</a>
-              <a class="dropdown-item" href="jak.html">PCSX2: Jak 3</a>
               <a class="dropdown-item" href="zelda.html">CEMU: Breath of the Wild</a>
+              <a class="dropdown-item" href="jak.html">PCSX2: Jak 3</a>
+              <a class="dropdown-item" href="witchers.html">The Witchers 3: Wild Hunt</a>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
 
-    <main>
-      <div>
-        <img class="img-responsive" src="images/zelda_img.jpg" alt="Zelda Breath of the Wild">
-      </div>
-
+    <div class="cover">
+      <img class="img-responsive" src="images/zelda_img.jpg" alt="Zelda Breath of the Wild">
+    </div>
+    <main class="container">
       <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel">
           <!--Indicators-->
           <ol class="carousel-indicators">
-              <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
-              <li data-target="#video-carousel-example" data-slide-to="1"></li>
-              <li data-target="#video-carousel-example" data-slide-to="2"></li>
+              <li data-target="#video-carousel-example" data-slide-to="0" class="videoCarousel0 active"></li>
+              <li data-target="#video-carousel-example" data-slide-to="1" class="videoCarousel1"></li>
+              <li data-target="#video-carousel-example" data-slide-to="2" class="videoCarousel2"></li>
           </ol>
           <!--/.Indicators-->
           <!--Slides-->
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                  <video class="video-fluid" autoplay loop>
+                  <video class="video0 video-fluid" id="myVid" autoplay loop>
                       <source src="videos/zelda1.mp4" type="video/mp4">
                   </video>
               </div>
               <div class="carousel-item">
-                  <video class="video-fluid" autoplay loop>
+                  <video class="video1 video-fluid" id="myVid" autoplay loop>
                       <source src="videos/zelda2.mp4" type="video/mp4">
                   </video>
               </div>
               <div class="carousel-item">
-                  <video class="video-fluid" autoplay loop>
+                  <video class="video2 video-fluid" id="myVid" autoplay loop>
                       <source src="videos/zelda3.mp4" type="video/mp4">
                   </video>
               </div>
@@ -93,13 +89,26 @@
           </a>
           <!--/.Controls-->
       </div>
+
+      <p class="description">The Legend of Zelda: Breath of the Wild is nothing like its predecessors.
+        It is part of a greater game series, The Legend of Zelda, that is a sorce of joy
+        and inspiration to many gamers young and old. Many games in this series have shaped,
+        shaken, and revoultionized the gaming communtiy from its early root. Just like the past Games
+        this one is no different. Breath of the Wild is an adventure open world game that centers around
+        the generic story of good vs evil.</p>
+
+        <h3>Genres</h3>
+        <div class="genres">
+          <span>Adventure</span>
+          <span>Emulated</span>
+          <span>Open World</span>
+        </div>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="jquery-3.2.1.js"></script>
     <script src="final-project.js"></script>
   </body>
 </html>

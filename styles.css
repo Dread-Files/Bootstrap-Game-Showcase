@@ -1,11 +1,81 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.d-inline-block {
+  width: 30px;
+  height: 30px;
+}
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+#carouselExampleIndicators {
+  width: 100%;
+}
 img {
   width: 100%;
 }
-/*.zelda {
-  position: relative;
+h2 {
+  width: 100%;
+  color: #6999e5;
+  font-style: oblique;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.clip-zelda {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-   clip: shape(top, right, bottom, left);
-}*/
+.card-text {
+  font-size: 20px;
+}
+.cover {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#video-carousel-example {
+  position: relative;
+  top: -150px;
+  box-shadow: 0 0 100px 20px;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.description, .genres {
+  color: #6999e5;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+}
+.description {
+  position: relative;
+  top: -50px;
+  text-shadow: 0 0 10px rgba(150, 150, 150, 1);
+}
+h3 {
+  text-align: center;
+  color: #6999e5;
+  font-style: oblique;
+}
+.genres span {
+  background-color: #2c2f33;
+  border-radius: 5px;
+  padding: 10px;
+}
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+  .cover {
+    width: 100%;
+  }
+  #video-carousel-example {
+    top: 0;
+    box-shadow: 0 0 0 0;
+  }
+  .description, .genres {
+    font-size: 15px;
+    top: 0;
+  }
+}
